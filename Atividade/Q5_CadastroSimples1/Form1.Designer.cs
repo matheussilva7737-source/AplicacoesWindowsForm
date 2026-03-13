@@ -1,4 +1,4 @@
-﻿namespace Q5_CadastroSimples
+﻿namespace Q5_CadastroSimples1
 {
     partial class Form1
     {
@@ -32,87 +32,68 @@
             label2 = new Label();
             txtNome = new TextBox();
             txtIdade = new TextBox();
-            button1 = new Button();
-            lstpessoas = new ListBox();
-            label3 = new Label();
-            label4 = new Label();
+            btnAdicionar = new Button();
+            lstPessoas = new ListBox();
             SuspendLayout();
             // 
             // label1
             // 
-            label1.Location = new Point(0, 0);
+            label1.AutoSize = true;
+            label1.Location = new Point(43, 83);
             label1.Name = "label1";
-            label1.Size = new Size(100, 23);
-            label1.TabIndex = 6;
+            label1.Size = new Size(43, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Nome:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(0, 0);
+            label2.Location = new Point(43, 121);
             label2.Name = "label2";
-            label2.Size = new Size(36, 15);
+            label2.Size = new Size(39, 15);
             label2.TabIndex = 1;
-            label2.Text = "Idade";
+            label2.Text = "Idade:";
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(96, 82);
+            txtNome.Location = new Point(87, 83);
             txtNome.Name = "txtNome";
-            txtNome.Size = new Size(203, 23);
+            txtNome.Size = new Size(100, 23);
             txtNome.TabIndex = 2;
             // 
             // txtIdade
             // 
-            txtIdade.Location = new Point(96, 114);
+            txtIdade.Location = new Point(87, 118);
             txtIdade.Name = "txtIdade";
-            txtIdade.Size = new Size(203, 23);
+            txtIdade.Size = new Size(100, 23);
             txtIdade.TabIndex = 3;
             // 
-            // button1
+            // btnAdicionar
             // 
-            button1.Location = new Point(310, 96);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 4;
-            button1.Text = "Adicionar";
-            button1.UseVisualStyleBackColor = true;
+            btnAdicionar.Location = new Point(208, 100);
+            btnAdicionar.Name = "btnAdicionar";
+            btnAdicionar.Size = new Size(75, 23);
+            btnAdicionar.TabIndex = 4;
+            btnAdicionar.Text = "Adicionar";
+            btnAdicionar.UseVisualStyleBackColor = true;
+            btnAdicionar.Click += btnAdicionar_Click;
             // 
-            // lstpessoas
+            // lstPessoas
             // 
-            lstpessoas.FormattingEnabled = true;
-            lstpessoas.ItemHeight = 15;
-            lstpessoas.Location = new Point(54, 143);
-            lstpessoas.Name = "lstpessoas";
-            lstpessoas.Size = new Size(331, 214);
-            lstpessoas.TabIndex = 5;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(44, 88);
-            label3.Name = "label3";
-            label3.Size = new Size(38, 15);
-            label3.TabIndex = 7;
-            label3.Text = "label3";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(44, 117);
-            label4.Name = "label4";
-            label4.Size = new Size(38, 15);
-            label4.TabIndex = 8;
-            label4.Text = "label4";
+            lstPessoas.FormattingEnabled = true;
+            lstPessoas.ItemHeight = 15;
+            lstPessoas.Location = new Point(43, 159);
+            lstPessoas.Name = "lstPessoas";
+            lstPessoas.Size = new Size(240, 244);
+            lstPessoas.TabIndex = 5;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(lstpessoas);
-            Controls.Add(button1);
+            ClientSize = new Size(342, 450);
+            Controls.Add(lstPessoas);
+            Controls.Add(btnAdicionar);
             Controls.Add(txtIdade);
             Controls.Add(txtNome);
             Controls.Add(label2);
@@ -129,9 +110,7 @@
         private Label label2;
         private TextBox txtNome;
         private TextBox txtIdade;
-        private Button button1;
-        private ListBox lstpessoas;
-        private Label label3;
-        private Label label4;
+        private Button btnAdicionar;
+        private ListBox lstPessoas;
     }
 }
